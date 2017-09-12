@@ -175,7 +175,7 @@
           <li class="mdui-list-item mdui-ripple">
             <i class="mdui-list-item-icon mdui-icon material-icons">&#xe88a;</i>
             <div class="mdui-list-item-content">
-              Index
+              首页
             </div>
           </li>
         </a>
@@ -187,7 +187,7 @@
           <li class="mdui-list-item mdui-ripple">
             <i class="mdui-list-item-icon mdui-icon material-icons">&#xe149;</i>
             <div class="mdui-list-item-content">
-              Archives
+              归档
               <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
             </div>
           </li>
@@ -201,7 +201,7 @@
         <div class="mdui-collapse-item ">
           <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
             <i class="mdui-list-item-icon mdui-icon material-icons">&#xe916;</i>
-            <div class="mdui-list-item-content">Years</div>
+            <div class="mdui-list-item-content">年份</div>
             <i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe5c5;</i>
           </div>
           <div class="mdui-collapse-item-body mdui-list">
@@ -284,11 +284,11 @@
       <div class="post-title mdui-text-truncate">SPIDEPA</div>
       <div class="post-actions mdui-valign">
         <div>
-          <span>Posted: </span>
+          <span>编写时间：</span>
           <span style="float: right">Sep 11, 2017</span>
           
           <br>
-            <span>Last Modified: </span>
+            <span>最后修改时间：</span>
             <span>Sep 12, 2017</span>
           
         </div>
@@ -305,15 +305,15 @@
     <div class="post-adjust">
       <div class="mdui-card card-bottom-fix menu-fix mdui-hoverable" id="blog-post">
         <div class="warning">
-          This article was last modified
+          这篇文章最后修改于
           <span id="content-warning"></span>
-          days ago.
-          The content of this post may be outdated!
+          天之前。
+          本页内容可能已经过时！
         </div>
         
         
           <div class="mdui-card-media">
-            <img src="/img/random/picHD_7.png"/>
+            <img src="/img/random/picHD_10.png"/>
           </div>
         
         <div class="post-content mdui-typo no-margin" id="post-content">
@@ -321,20 +321,34 @@
 <h2 id="World"><a href="#World" class="headerlink" title="World"></a>World</h2><h3 id="A-K-A-spiD"><a href="#A-K-A-spiD" class="headerlink" title="A.K.A spiD"></a>A.K.A spiD</h3><figure class="highlight bash"><div class="mdui-table-fluid"><table class="mdui-table mdui-table-hoverable "><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="string">"It's me."</span></div></pre></td></tr></table></div></figure>
 
         </div>
+        <div id="container"></div>
+        <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+        <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+        <script>
+        var gitment = new Gitment({
+          owner: 'EisenloCarter',
+          repo: 'eisenlocarter.github.io',
+          oauth: {
+            client_id: 'dc9ea2329cb2c152fee7',
+            client_secret: '06e16e76b7d45f30a96a0c3a3ae9fa112a2537c9',
+          },
+        })
+        gitment.render('container')
+        </script>
 
         
           <div class="license mdui-typo">
             <span>
-              Article License: 
+              本文许可协议：
               
                 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">CC BY-NC-SA 4.0</a>
               
             </span>
             <br />
-            <span>Article Permalink: <a href="http://yoursite.com/2017/09/11/hello-world/">http://yoursite.com/2017/09/11/hello-world/</a></span>
+            <span>本文永久链接：<a href="http://yoursite.com/2017/09/11/hello-world/">http://yoursite.com/2017/09/11/hello-world/</a></span>
             
               <br />
-              <span>Article Markdown: <a href="http://yoursite.com/2017/09/11/hello-world/hello-world.md">http://yoursite.com/2017/09/11/hello-world/hello-world.md</a></span>
+              <span>本文Markdown：<a href="http://yoursite.com/2017/09/11/hello-world/hello-world.md">http://yoursite.com/2017/09/11/hello-world/hello-world.md</a></span>
             
           </div>
         
@@ -381,9 +395,9 @@
 </main>
 
 <div id="outdated" style="z-index: 9999;">
-  <h6>Your browser is out-of-date!</h6>
-  <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
-  <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+  <h6>你的浏览器一直过气辣！</h6>
+  <p>赶紧升级浏览器来访问本站吧！<a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">现在就去</a></p>
+  <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="关闭">&times;</a></p>
 </div>
 
 
@@ -520,7 +534,7 @@
       counter: false,
       dynamicEl: [{
         "src": img_src,
-        'subHtml': "<span author>Eisenlo Carter</span> • Public<div descr>" + img_alt + "</div>"
+        'subHtml': "<span author>Eisenlo Carter</span> • 公开<div descr>" + img_alt + "</div>"
       }],
     });
   }

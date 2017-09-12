@@ -18,7 +18,7 @@
         https://github.com/Halyul/hexo-theme-mdui
         Version: 1.5.0 -->
   <meta charset="UTF-8">
-  <title>Archives - SPID</title>
+  <title>归档 - SPID</title>
 
   <!-- Favicons -->
   <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
@@ -55,7 +55,7 @@
   <!-- The Open Graph protocol -->
   <meta property="og:url" content="http://yoursite.com">
   <meta property="og:type" content="blog">
-  <meta property="og:title" content="Archives - SPID | SPID">
+  <meta property="og:title" content="归档 - SPID | SPID">
   <meta property="og:image" content="/img/favicon.png" />
   
 
@@ -132,6 +132,8 @@
           <span class="mdui-typo-title">Eisenlo Carter</span>
           <div class="mdui-toolbar-spacer"></div>
           
+            <button class="mdui-btn mdui-btn-dense mdui-ripple mdui-hidden-md-up" mdui-dialog="{target: '#aboutmeDialog'}">关于</button>
+          
           
 
         </div>
@@ -172,7 +174,7 @@
           <li class="mdui-list-item mdui-ripple">
             <i class="mdui-list-item-icon mdui-icon material-icons">&#xe88a;</i>
             <div class="mdui-list-item-content">
-              Index
+              首页
             </div>
           </li>
         </a>
@@ -183,7 +185,7 @@
         <li class="mdui-list-item mdui-ripple mdui-list-item-active">
           <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-theme-accent">&#xe149;</i>
           <div class="mdui-list-item-content mdui-text-color-theme-accent">
-            Archives
+            归档
             <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
           </div>
         </li>
@@ -252,14 +254,16 @@
       </div>
       <div class="flex-spacer mdui-hidden-sm-down"></div>
       
+        <button class="mdui-btn mdui-ripple mdui-text-color-white-icon mdui-hidden-sm-down" mdui-dialog="{target: '#aboutmeDialog'}">关于</button>
       
-        <button class="mdui-btn mdui-color-theme-accent mdui-ripple mdui-btn-raised" mdui-dialog="{target: '#contactDialog'}">Contact me</button>
+      
+        <button class="mdui-btn mdui-color-theme-accent mdui-ripple mdui-btn-raised" mdui-dialog="{target: '#contactDialog'}">联系我</button>
       
     </div>
   </div>
   <div class="items mdui-container-fluid">
     <div class="title mdui-text-color-theme-secondary">
-      Categories
+      分类
     </div>
     <div class="container mdui-row">
       
@@ -267,7 +271,7 @@
   </div>
   <div class="items mdui-container-fluid">
     <div class="title mdui-text-color-theme-secondary">
-      Tags
+      标签
     </div>
     <div class="container mdui-row">
       
@@ -275,15 +279,15 @@
   </div>
   <div class="items mdui-container-fluid">
     <div class="title mdui-text-color-theme-secondary">
-      Years
+      年份
     </div>
     <div class="container mdui-row">
       
         
         <div class="mdui-col-xs-6 mdui-col-md-3 item">
           <a href="/archives/2017/" target="_self" class="no-text-decoration">
-            <div class="mdui-card card-bottom-fix mdui-color-amber">
-              <div class="mdui-card-media" style="background-image: url(/img/random/picHD_16.png)">
+            <div class="mdui-card card-bottom-fix mdui-color-deep-orange">
+              <div class="mdui-card-media" style="background-image: url(/img/random/picHD_42.png)">
               </div>
               <div class="content no-length">
                 <img class="mdui-img-circle avatar" src="/img/avatar.png" />
@@ -306,16 +310,102 @@
 </main>
 
 <div id="outdated" style="z-index: 9999;">
-  <h6>Your browser is out-of-date!</h6>
-  <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
-  <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+  <h6>你的浏览器一直过气辣！</h6>
+  <p>赶紧升级浏览器来访问本站吧！<a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">现在就去</a></p>
+  <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="关闭">&times;</a></p>
 </div>
+
+
+  <style id="aboutme_dialog_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("aboutme_dialog_css","/css/src/shared/aboutme_dialog.min.css?USfsLmuhVjtyhVNT7iwjpA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+<div class="mdui-appbar mdui-appbar-fixed" id="aboutmeAppbar">
+  <div class="mdui-toolbar mdui-color-theme">
+    <img class="mdui-img-circle avatar" src="/img/avatar.png"/>
+    <div class="title">
+      Eisenlo Carter
+    </div>
+    <div class="mdui-toolbar-spacer"></div>
+    <button class="mdui-btn mdui-btn-icon" onclick="closeAboutmeDialog()">
+      <i class="mdui-icon material-icons">&#xe5cd;</i>
+    </button>
+  </div>
+</div>
+<div class="mdui-dialog" id="aboutmeDialog">
+  <div style="height: 224px;" onclick="closeAboutmeDialog()"></div>
+  <div class="mdui-card mdui-color-theme card1 card-bottom-fix">
+    <img class="mdui-img-circle avatar mdui-center" src="/img/avatar.png"/>
+    <div class="content">
+      <div class="name mdui-text-center">
+        Eisenlo Carter
+      </div>
+      <div class="others mdui-text-center">
+        
+      </div>
+    </div>
+  </div>
+  <div id="cardLocation"></div>
+  
+</div>
+<script type="text/javascript">
+  function closeAboutmeDialog() {
+    var aboutmeDialog = new mdui.Dialog('#aboutmeDialog');
+    aboutmeDialog.close();
+  };
+  /* aboutme dialog */
+  (function() {
+    var collapseItems = document.querySelectorAll('div.mdui-collapse-item')
+
+    for (i = 0; i < collapseItems.length; i++) {
+      collapseItems[i].addEventListener("click", toggleText);
+    }
+
+    function toggleText() {
+      this.addEventListener('open.mdui.collapse', function() {
+          this.classList.add('hide-more');
+          this.classList.remove('hide-less');
+      });
+      this.addEventListener('close.mdui.collapse', function() {
+        this.classList.remove('hide-more');
+        this.classList.add('hide-less');
+      });
+    }
+
+    var cardFlag = false;
+    var aboutmeDialog = document.querySelector('div#aboutmeDialog')
+    var aboutmeAppbar = document.querySelector('div#aboutmeAppbar')
+    aboutmeDialog.addEventListener('scroll', function() {
+      var cardLocation = document.querySelector('div#cardLocation').getBoundingClientRect().top
+      if (!cardFlag && cardLocation < 0) {
+        aboutmeAppbar.classList.add('style-fix');
+        cardFlag = true;
+      } else if (cardFlag && cardLocation >= 0) {
+        aboutmeAppbar.classList.remove('style-fix');
+        cardFlag = false;
+      };
+    });
+
+    aboutmeDialog.addEventListener('open.mdui.dialog', function() {
+      var cardLocation = document.querySelector('div#cardLocation').getBoundingClientRect().top
+      if (cardLocation < 0) {
+        aboutmeAppbar.classList.add('style-fix');
+        cardFlag = true;
+      };
+    });
+    aboutmeDialog.addEventListener('close.mdui.dialog', function() {
+      var cardLocation = document.querySelector('div#cardLocation').getBoundingClientRect().top
+      if (cardLocation < 0) {
+        aboutmeAppbar.classList.remove('style-fix');
+        cardFlag = false;
+      };
+    });
+  })();
+</script>
+
 
 
 
   <div class="mdui-dialog" id="contactDialog">
     <div class="mdui-dialog-title">
-      How to contact me
+      如何联系我
     </div>
     <div class="mdui-dialog-content no-padding-bottom">
       <div class="mdui-list">
@@ -333,8 +423,6 @@
             
             
             
-              <i class="mdui-list-item-icon"></i>&emsp;
-            
             Facebook
           </a>
         
@@ -342,7 +430,7 @@
     </div>
     <div class="mdui-dialog-actions">
       <button class="mdui-btn mdui-ripple" mdui-dialog-close>
-        Close
+        关闭
       </button>
     </div>
   </div>
